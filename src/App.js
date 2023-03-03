@@ -5,7 +5,9 @@ function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
     const fetchdata = async () => {
-      const response = await fetch("https://testfullstackbackend-dgckekmog-aayush130702-gmailcom.vercel.app/api/data");
+      const response = await fetch(
+        "https://testfullstackbackend-dgckekmog-aayush130702-gmailcom.vercel.app/api/data"
+      );
       const json = await response.json();
       if (response.ok) {
         setData(json);
@@ -26,7 +28,6 @@ function App() {
           {data.message}
         </p>
       </a>
-
     </div>
   );
 }
