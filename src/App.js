@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const fetchdata = async () => {
       const response = await fetch(
-        "https://testfullstackbackend-dgckekmog-aayush130702-gmailcom.vercel.app/api/data"
+        "https://testfullstackbackend-7jjk5ezqg-aayush130702-gmailcom.vercel.app/api/data"
       );
       const json = await response.json();
       if (response.ok) {
